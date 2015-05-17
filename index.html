@@ -1,0 +1,545 @@
+<!doctype html>
+<html class="fsvs" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="telephone=no" name="format-detection">
+  <title>昕昀的个人简历 | Sheena's Resume</title>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+  <script src="js/fsvs.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <style type="text/css">
+  body {
+    font-family: Georgia;
+    font-weight: normal;
+    color: #979faa;
+  }
+  /*--- Home Part Starts Here ---*/
+  #home-top{
+    background:url(./images/banner-top.jpg)no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    min-height: 400px;
+    position: relative;
+  }
+  #avatar{
+    position:absolute;
+    bottom: -26%;
+    left: 42%;
+  }
+  #home-bottom{
+    text-align: center;
+    margin-top: 100px;
+  }
+  #home-bottom h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: #2b3b4b;
+    margin: 10px 0 5px 0;  
+  }
+  #home-bottom small {
+    font-size: 16px;
+    font-weight: 300;
+    color: #C2CAD5;
+  }
+  /*--- Home Part Ends Here ---*/
+  /*--- Info Part Starts Here ---*/
+  .header {
+    margin:4em 0;
+  }
+  .header h1 {
+    font-weight:800;
+    font-size:28px;
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom: 10px;
+    color: #2b3b4b;
+  }
+  span.line{
+    width:5%;
+    height:1px;
+    background:#2b3b4b;
+    display: block;
+    margin:0 auto;
+  }
+
+  .container {
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
+    text-align: left;
+    margin: 40px 100px 0 100px;
+  }
+  li {
+    list-style: none;
+    margin-top: 30px;
+  }
+  li img{
+    vertical-align:middle;
+  }
+  /*--- Info Part Ends Here ---*/
+  /*--- Experience Part Starts Here ---*/
+  #Experience .header {
+    margin:4em 0 0 0;
+  }
+  /*--- Experience  Part Ends Here ---*/
+  /*--- Skills Part Starts Here ---*/
+  /* Load animation */
+  @-webkit-keyframes 
+  load { 0% {
+  stroke-dashoffset:629
+  }
+  }
+  @-moz-keyframes 
+  load { 0% {
+  stroke-dashoffset:0
+  }
+  }
+  @keyframes 
+  load { 0% {
+  stroke-dashoffset:0
+  }
+  }
+  .progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+  }
+  /* Item */
+  .progress>li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #;
+    font-family: Lato;
+    font-weight: 100;
+    margin: 2rem;
+  }
+  .progress>li:before {
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    font-weight: 400;
+    color: #303e49;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+  }
+  .progress>li:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .progress svg {
+    width: 10rem;
+    height: 10rem;
+  }
+  path {
+    fill: none;
+    stroke-width: 4;
+    stroke-dasharray: 629;
+    stroke: #6787A0;
+    -webkit-animation: load 5s;
+    -moz-animation: load 10s;
+    -o-animation: load 10s;
+    animation: load 10s;
+  }
+  /*--- Skills Part Ends Here ---*/
+
+  /*--- Hobbies Part Starts Here ---*/
+  #footer {
+    width: 100%;
+    background: url(./images/banner-bottom.jpg) no-repeat;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100px;
+  }
+  #footerword {
+    height: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+  }
+  #Hobbies li{
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    width: 200px;
+  }
+  #Hobbies img{
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  .mask {
+      display: none; 
+  }
+  #Hobbies li:hover img{
+    opacity: 0.3;
+  }
+
+  #Hobbies li:hover .mask{
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    font-size: 1.5rem;
+    color: #303e49;
+  }
+  /*--- Hobbies Part Ends Here ---*/
+  /*--- Mobile Phone Style ---*/
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 670px)
+  and (orientation : portrait) {
+    #home-top{
+      min-height: 60%;
+    }
+    #avatar{
+      position:absolute;
+      bottom: -20%;
+      left: 30%;
+    }
+    #avatar img{
+      max-width: 60%;
+    }
+    #home-bottom{
+      margin-top: 15%;
+    }
+    .header{
+      font-size: 2rem;
+      margin: 2rem 0 1rem 0;
+    }
+    ul{
+      margin: 10px 0 0 5px;
+    }
+    #Info ul li img{
+      max-width: 30px;
+    }
+    .progress{
+      margin: 0;
+    }
+    .progress>li{
+      margin: 10px 0 0 0;
+    }
+    .progress svg{
+      width: 120px;
+      height: 120px;
+    }
+    .progress>li:after{
+      top: 3.3rem;
+      font-size: 1.2rem;
+    }
+    .progress>li:before{
+      bottom: -1rem;
+    }
+    #footer {
+      width: 100%;
+      min-height: 60px;
+    }
+    #footerword {
+      height: 60px;
+      line-height: 60px;
+    }
+    #Hobbies ul{
+      text-align:center;
+    }
+    #Hobbies li{
+      margin: 10px;
+      width: 100px;
+    }
+    #Experience .header{
+      margin: 2rem 0 0 0; 
+    }
+    #Hobbies li:hover .mask{
+      position: absolute;
+      top: 40px;
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 0.7rem;
+    }
+    #cd-timeline {
+      padding: 1em 0;
+    }
+    .cd-timeline-block {
+      margin: 1em 0;
+    }
+    .cd-timeline-content {
+      padding: 0.4rem;
+    }
+    .cd-timeline-content .cd-date {
+      padding: 0.2rem 0;
+    }
+  }
+  /*--- iphone 6 ---*/
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (min-device-height : 600px) 
+  and (orientation : portrait) {
+    #avatar{
+      position:absolute;
+      bottom: -20%;
+      left: 30%;
+    }
+    #avatar img {
+      max-width: 70%;
+    }
+    #home-bottom{
+      margin-top: 21%;
+    }
+    .header{
+      margin: 2rem 0;
+    }
+    #Info ul{
+      margin: 30px 10px 0 20px;
+    }
+    .progress svg{
+      width: 150px;
+      height: 150px;
+    }
+    .progress>li{
+      margin: 20px 0 0 0;
+    }
+    .progress>li:after{
+      top: 4.2rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    #cd-timeline {
+      padding: 2em 0;
+    }
+    .cd-timeline-block {
+      margin: 1.5em 0;
+    }
+    .cd-timeline-content {
+      padding: 0.6rem;
+    }
+    .cd-timeline-content .cd-date {
+      padding: 0.8rem 0;
+    }
+    #Hobbies li{
+      margin: 20px;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div id="fsvs-body">
+    <!-- Home Starts Here ---->
+    <div class="slide" id="Home"> 
+      <div id="home-top">
+          <div id="avatar">
+            <img src="./images/profile.png"/>
+          </div>
+      </div>
+      <div id="home-bottom">
+            <h2>Sheena Chen</h2>
+            <small>Front-end Developer <br>Beijing, China</small>
+      </div>
+    </div>
+    <div class="slide" id="Info">
+      <div class="header">
+        <h1>About Me</h1>
+        <span class="line"></span>
+      </div>
+      <div class="container">
+        <ul>
+          <li><img src="./images/person.png"/> Sheena Chen</li>
+          <li><img src="./images/sex.png"/> Female</li>
+          <li><img src="./images/birthday.png"/> 1991.04.13</li>
+          <li><img src="./images/degree.png"/> Master</li>
+        </ul>
+        <ul>
+          <li><img src="./images/phone.png"/> 15210846260</li>
+          <li><img src="./images/email.png"/> sheenacxy@163.com</li>
+          <li><img src="./images/qq.png"/> 278822173</li>
+          <li><img src="./images/wechat.png"/> fruittea</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide" id="Experience">
+      <div class="header">
+        <h1>Education & Experience</h1>
+        <span class="line"></span>
+      </div>
+      <div class="container">
+        <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-code">
+              <img src="images/code.png">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+              <h2>Study Room Finding System</h2>
+              <p>Use the WordPress to build a website and use HTML/CSS & JS to customize our own theme 
+              to help students in BNU find a study room much more easily. </p>
+              <span class="cd-date">Apr 2011</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-graduate">
+              <img src="images/graduate.png">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+              <h2>Graduate From Beijing Normal University</h2>
+              <p>bachelor degree in Computer Science <br> GPA:3.8 (Top 2%)<br> 5 scholarship & 7 awards of competition.</p>
+              <span class="cd-date">Jun 2013</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-code">
+              <img src="images/code.png">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+            <h2>VITA'S RAISING</h2>
+              <p>use HTML/CSS & JS to build the responsible website for people to take care of a plant connected to the Internet.<br>
+              <a href="http://vita.kuangqi.me" target="_blank" class="cd-read-more">see more</a></p>
+              <span class="cd-date">Mar 2015</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-graduate">
+              <img src="images/graduate.png">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+              <h2>About to Graduate From Peking University</h2>
+              <p>master degree in Geology Information <br> GPA:3.8 (Top 5%)<br> 1 scholarship & Merit Student.</p>
+              <span class="cd-date">Jun 2016</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+        </section> <!-- cd-timeline -->
+      </div>
+    </div>
+    <div class="slide" id="Skills">
+      <div class="header">
+        <h1>Skills</h1>
+        <span class="line"></span>
+      </div>
+      <div class="container">
+        <ul class="progress">
+          <!--  Item  -->
+          <li data-name="HTML/CSS" data-percent="90%"> 
+            <svg viewBox="0 0 200 200">
+              <g fill="none" stroke-width="3">
+                <circle fill="none" stroke="#aeaeae" stroke-width="2" cx="100" cy="100" r="85"/>
+                <path d="M100,100 m -85,0 a 85,85 0 1,1 170,0  a 85,85 0 1,1 -170,0" transform="rotate(90 100 100)" stroke-dashoffset="155"></path>
+              </g>
+            </svg> 
+          </li>
+          <!--  Item  -->
+          <li data-name="JavaScript" data-percent="80%"> 
+            <svg viewBox="0 0 200 200">
+              <g fill="none" stroke-width="3">
+                <circle fill="none" stroke="#aeaeae" stroke-width="2" cx="100" cy="100" r="85"/>
+                <path d="M100,100 m -85,0 a 85,85 0 1,1 170,0  a 85,85 0 1,1 -170,0" transform="rotate(90 100 100)" stroke-dashoffset="190"></path>
+              </g>
+            </svg> 
+          </li>
+          <!--  Item  -->
+          <li data-name="Photoshop" data-percent="80%"> 
+            <svg viewBox="0 0 200 200">
+              <g fill="none" stroke-width="3">
+                <circle fill="none" stroke="#aeaeae" stroke-width="2" cx="100" cy="100" r="85"/>
+                <path d="M100,100 m -85,0 a 85,85 0 1,1 170,0  a 85,85 0 1,1 -170,0" transform="rotate(90 100 100)" stroke-dashoffset="190"></path>
+              </g>
+            </svg> 
+          </li>
+          <!--  Item  -->
+          <li data-name="PHP" data-percent="75%"> 
+            <svg viewBox="0 0 200 200">
+              <g fill="none" stroke-width="3">
+                <circle fill="none" stroke="#aeaeae" stroke-width="2" cx="100" cy="100" r="85"/>
+                <path d="M100,100 m -85,0 a 85,85 0 1,1 170,0  a 85,85 0 1,1 -170,0" transform="rotate(90 100 100)" stroke-dashoffset="225"></path>
+              </g>
+            </svg> 
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide" id="Hobbies">
+      <div class="header">
+        <h1>Hobbies & Interests</h1>
+        <span class="line"></span>
+      </div>
+      <div class="container">
+      <ul>
+        <li>
+          <img src="./images/traveling.jpg" >
+          <div class="mask">traveling</div>
+        </li>
+        <li>
+          <img src="./images/food.jpg" >
+          <div class="mask">eating</div>
+        </li>
+        <li>
+          <img src="./images/reading.jpg" >
+          <div class="mask">reading</div>
+        </li>
+        <li>
+          <img src="./images/singing.jpg" >
+          <div class="mask">shower<br>singing</div>
+        </li>
+      </ul>
+      </div>
+      <div id="footer">
+      <div id="footerword">Thanks for viewing！</div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      //nitialize the fsvs plug-in
+      var fsvs = $.fn.fsvs({
+        speed : 1000,
+        bodyID : 'fsvs-body',
+        selector : '> .slide',
+        mouseSwipeDisance : 40,
+        afterSlide : function(){},
+        beforeSlide : function(){},
+        endSlide : function(){},
+        mouseWheelEvents : true,
+        mouseDragEvents : true,
+        touchEvents : true,
+        arrowKeyEvents : true,
+        pagination : true,
+        nthClasses : false,
+        detectHash : true
+      });
+      //fold and unfold the timeline item
+      $(".cd-timeline-content p").hide();
+      $(".cd-timeline-content h2").click(function() {
+        $(this).next("p").slideToggle(300);
+        $(this).parents(".cd-timeline-block").siblings(".cd-timeline-block").find("p").slideUp('fast');
+      });
+    });
+  </script>
+</body>
+</html>
